@@ -1,5 +1,7 @@
 
-// FUNCTION 
+// =========================
+// FUNCTION
+// =========================
 
 
 // Passes three parameters into the function 
@@ -21,11 +23,11 @@ function calculateAverage(score1, score2, score3) {
         // STUDENT 1 
         // ========================= 
 
-        let name1 = document.getElementById("studentName1").value;
+        let name1 = "Elijah Barefield";
         
-        let score1_1 = Number(document.getElementById("score1_1").value);
-        let score2_1 = Number(document.getElementById("score2_1").value);
-        let score3_1 = Number(document.getElementById("score3_1").value); 
+        let score1_1 = 97;
+        let score2_1 = 88;
+        let score3_1 = 92; 
         
         // Invoke the function 
         let average1 = calculateAverage(score1_1, score2_1, score3_1);
@@ -43,11 +45,11 @@ function calculateAverage(score1, score2, score3) {
             // STUDENT 2 
             // ========================= 
             
-            let name2 = document.getElementById("studentName2").value;
+            let name2 = "Brandi Aneke";
             
-            let score1_2 = Number(document.getElementById("score1_2").value);
-            let score2_2 = Number(document.getElementById("score2_2").value); 
-            let score3_2 = Number(document.getElementById("score3_2").value); 
+            let score1_2 = 89;
+            let score2_2 = 94;
+            let score3_2 = 99;
             
             // Invoke the function 
             
@@ -68,8 +70,7 @@ function calculateAverage(score1, score2, score3) {
             // ========================= 
             
             let report = `
-                <div class="student-report">
-                    <div class="student">
+                <div class="student">
                         <h2>${student1.name}</h2>
                         <p>Test 1: ${student1.test1}</p>
                         <p>Test 2: ${student1.test2}</p>
@@ -84,7 +85,7 @@ function calculateAverage(score1, score2, score3) {
                         <p>Test 3: ${student2.test3}</p>
                         <p>Average: ${student2.average}</p>
                     </div>
-                </div>`;
+                `;
                 
                 // Output to the page 
                 document.getElementById("output").innerHTML = report; 
@@ -92,3 +93,6 @@ function calculateAverage(score1, score2, score3) {
                 // Output to the console 
                 console.log(report); 
             }
+
+            //Run the function to create students and display the report
+            createStudents();
